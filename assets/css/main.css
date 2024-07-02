@@ -68,6 +68,11 @@ section {
   overflow: hidden;
 }
 
+.img-fluid {
+  height: 150px;
+  width:300px;
+}
+
 .sections-bg {
   background-color: #f6f6f6;
 }
@@ -87,8 +92,14 @@ section {
 }
 
 .alarm{
+  width: 15vw;
+  height: 15vw;
+  margin-right: 7vw;
+}
+
+.spade{
   max-width: 20vw;
-  margin-right: 5vh;
+  margin-right: 14vh;
 }
 
 .kore{

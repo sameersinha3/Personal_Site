@@ -63,8 +63,8 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>CSCI 1410 Course Website</h2>
-              <p>Here are some details of the project and a link to the site itself</p>
+              <h2>Vibe Check</h2>
+              <p>Here are some details of the project and a link to our group's GitHub</p>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>CSCI 1410 Course Website</li>
+            <li>Vibe Check</li>
           </ol>
         </div>
       </nav>
@@ -86,23 +86,28 @@
 
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Application Manager</h2>
+              <h2>Vibe Check</h2>
               <p>
-                When I created this site, I still had minimal experience with web development and React, which is the first JavaScript
-                framework I learned. I, along with 2 other TAs, build this website in a matter of days, having to collaborate on specific
-                design choices while I juggled getting used to React.
+                This was a final project for my Computer Vision class at Brown. After mulling over many ideas, our group decided to create a TikTok
+                style filter generator. We used a vision-based model in order to try to classify a song into one of ten genres. Based on the 
+                genre, we would look for genre-specific features. For example, hip-hop music would look for bass hits, while reggae music would
+                look for drum hits.
               </p>
               <p>
-                Most Computer Science courses at Brown have a dedicated course page, and it is almost always created by the TAs. Since I 
-                wanted to get more experience with web development, I volunteered to assist in making the site. We had to collaborate on making
-                the design cohesive after the class voted on a Game of Thrones theme. This involved pictures, fonts, animations, and even text 
-                content.
+                After we had the genre and the genre-specific features, it was time to create a different filter for each genre. For disco music,
+                for example, we used a simple color filter that changed color to the beat of the song, which resembled a classic disco. For rock
+                music, we added a global noise filter along with a greyscale filter to add a vintage look, and added a sobel kernel during loud moments
+                to give the appearance of the lights going out at a rock concert. This filter was applied to a user inputted video in order to create a 
+                TikTok style filter. Finally, we created GUI where users could record a video, add music, and the filter would automatically applied.
               </p>
               <p>
-                This is just a single page in React, but having to get used to the framework so quickly laid the ground for me to pick up Ember 
-                within a matter of days at my next internship, and learning Vue on my own as a passion project. 
+                All in all, we created a highly accurate model. It achieved 88 percent genre-classification accuracy on two-second clips of music. In 
+                order to make the model even higher accuracy, we sampled several 2-second clips from an inputted song, and took a majority vote on what genre
+                the song was. This led to near 100 percent accuracy in practice. The music feature extraction and filter generation was a fun way to apply
+                the model as part of a larger project.
               </p>
-              <img src="assets/img/portfolio/AI.png" class="portfolio-image"></img>
+              Here is our batch accuracy for model classification.
+              <img src="assets/img/vibecheck.png" class="portfolio-image"></img>
             </div>
           </div>
 
@@ -111,9 +116,9 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Technologies</strong> <span>ReactJS, Bootstrap</span></li>
-                <li><strong>Type</strong> <span>Personal Project</span></li>
-                <li><strong>Project date</strong> <span>Fall 2022</span></li>
-                <li><strong>Live Site</strong> <a href="https://csci1410-2022.vercel.app/">https://csci1410-2022.vercel.app/</a></li>
+                <li><strong>Type</strong> <span>Class Project (Computer Vision)</span></li>
+                <li><strong>Project date</strong> <span>Spring 2024</span></li>
+                <li><strong>GitHub Link</strong> <a href="ethanga12/cv_final">link</a></li>
               </ul>
             </div>
           </div>
