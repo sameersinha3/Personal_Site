@@ -89,24 +89,58 @@ section {
 .portfolio-image{
   margin-left: 5vw;
   width: 50vw;
+  padding-bottom: 1vw
 }
 
+.img-grid{
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items */
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Center images horizontally */
+}
+
+.vibecheck-image{
+  width: 25vw;
+  padding-left: 1wv;
+}
+.media-container {
+  display: flex; /* Use Flexbox to align items horizontally */
+  align-items: flex-start; /* Align items at the top */
+  gap: 1vw;
+}
+
+.media-container img,
+.media-container video {
+  max-width: 25vw; /* Ensure both elements fit within their container */
+  
+  height: 15vw; /* Maintain aspect ratio */
+}
+
+.img-grid figcaption{
+  max-width: 25vw;
+  font-size: smaller;
+  text-align: center;
+}
+
+.raytracer-image{
+  width: 25vw
+}
 .alarm{
-  width: 15vw;
-  height: 15vw;
-  margin-right: 7vw;
+  width: 10vw;
+  height: 10vw;
+  margin-right:7vw;
 }
 
 .spade{
-  max-width: 20vw;
-  margin-right: 14vh;
+  width: 10vw;
+  height: auto;
+  margin-right: 7vw;
 }
 
 .kore{
-  margin-top: 7vh;
-  max-width: 20vw;
-  height: 22vh;
-  margin-right: 5vh;
+  width: 10vw;
+  height: 5vw;
+  margin-right: 7vw;
 }
 
 .resume-item{

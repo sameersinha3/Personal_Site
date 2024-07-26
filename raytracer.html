@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Application Manager</title>
+  <title>Realtime Raytracer</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -63,8 +63,8 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Application Manager</h2>
-              <p>Here are some details of the project and the GitHub repo</p>
+              <h2>Realtime Raytracer</h2>
+              <p>Here are some details of the project</p>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Application Manager</li>
+            <li>Realtime Raytracer</li>
           </ol>
         </div>
       </nav>
@@ -86,23 +86,35 @@
 
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Application Manager</h2>
+              <h2>Realtime Raytracer</h2>
               <p>
-                I first created this project to get familiar with jQuery and PHP due to an internship I applied to requiring familiarity 
-                with how to interact with SQL databases using these technogies. After watching some online tutorials, I figured it was 
-                best to get my hands dirty and figure it out myself. This project required a steep learning curve, as I had never used
-                PHP or jQuery before, although I had some familiarity with SQL. 
+                This realtime raytracer accepts a scenefile, and beautifully illuminates the scene via the phong illumination model.
               </p>
               <p>
-                This application is meant to be an application manager. One context this app could be use would be food trucks applying to 
-                be food vendors at a large music festival. Each applicant would be able to submit an application, while an administrator of
-                the event could create applications manually, as well as read, edit and delete any applications submitted by the vendors.
+                As this is a 3D renderer, you may include objects at different depths, different kinds of light (point light, spot light, and directional light), and it creates a 3D rendering. The lighting scheme includes reflections via recursive raytracing, and the color of each object is determined by the recursive phong illumination model, which takes into account ambient lighting, the diffuse component, and the specular, or shiny component. It also supports texture mapping for objects that aren't solid colored.
               </p>
               <p>
-                Technically, this really only involves a table of the vendors in SQL, but we use PHP and jQuery to interact with this table 
-                in different ways. Below is an image of the administrator view, with read, edit and delete actions. Note that the create button is elsewhere in the app.
+                This was one of the hardest and most challenging time consuming projects I completed in college. As it's an assignment that will be re-used, a GitHub link is unavailable, but feel free to ask me any questions about this project. Please enjoy some of the coolest scenes I was able to render.
               </p>
-              <img src="assets/img/portfolio/Application.png" class="portfolio-image"></img>
+              <div class="img-grid">
+                <figure>
+                  <img src="assets/img/point_light.png" class="raytracer-image"></img>
+                  <figcaption>A scene illuminated by a point light</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/spot_light.png" class="raytracer-image"></img>
+                  <figcaption>A scene illuminated by a spot light</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/reflections.png" class="raytracer-image"></img>
+                  <figcaption>Reflections done via recursive raytracing in action, mimicking how light moves in real life</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/texture.png" class="raytracer-image"></img>
+                  <figcaption>Texture mapping allows for figures to have a non-solid color, instead being "wrapped" in an image via u,v coordinate mapping.</figcaption>
+                </figure>
+                
+              </div>
             </div>
           </div>
 
@@ -110,10 +122,10 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Technologies</strong> <span>PHP, jQuery, SQL, HTML and CSS</span></li>
-                <li><strong>Type</strong> <span>Personal Project</span></li>
-                <li><strong>Project date</strong> <span>Spring 2023</span></li>
-                <li><strong>GitHub Repo</strong> <a href="https://github.com/sameersinha3/vendor-app">https://github.com/sameersinha3/vendor-app</a></li>
+                <li><strong>Technologies</strong> <span>C++ and GLM</span></li>
+                <li><strong>Type</strong> <span>CSCi 1230: Computer Graphics</span></li>
+                <li><strong>Project date</strong> <span>Fall 2023</span></li>
+                <li><strong>GitHub Repo</strong> GitHub link unavailable</li>
               </ul>
             </div>
           </div>
