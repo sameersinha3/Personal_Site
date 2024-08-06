@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #c480d1;
+  --color-primary: #292929;
   --color-secondary: #f85a40;
 }
 
@@ -66,6 +66,12 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-fluid {
@@ -1817,7 +1823,6 @@ section {
 .contact .info-item i {
   font-size: 20px;
   color: #fff;
-  float: left;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.2);
