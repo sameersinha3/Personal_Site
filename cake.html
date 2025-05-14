@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>The Infinite Library</title>
+  <title>CAKE</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -63,7 +63,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>The Infinite Library</h2>
+              <h2>CAKE: Context Aware KV Evictions</h2>
               <p>Here are some details of the project</p>
             </div>
           </div>
@@ -73,7 +73,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>The Infinite Library</li>
+            <li>CAKE: Context Aware KV Evictions</li>
           </ol>
         </div>
       </nav>
@@ -86,24 +86,16 @@
 
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>The Infinite Library</h2>
+              <h2>CAKE: Context-Aware KV Evictions</h2>
               <p>
-                In no particular order, the challenging pieces of this assignments beyond getting acquainted with Three.js were procedural generation with frustum culling, hashing, god rays, and bloom.
+                This was my final project for CS525 Advanced Distributed Systems at University of Illinois - Urbana Champaign, and my research partner and I are working on getting this paper published at a top conference or journal.
               </p>
               <p>
-                <b>Procedural Generation: </b>The library was divided into square cells in a 2D grid. Each cell represents a proxy for content based on the calculated hash for that particular cell. This was implemented in such a way that each cell would consistently have the same hash even if the user were to step out of its range and back in. If a cell goes outside of the range of the player/camera, it gets removed from the scene but its model is recycled and used for new cells introduced into the range. This allows for a more efficient use of memory and smooth generation of terrain.
+                As Large Language Models (LLMs) take on increasingly complex tasks, their input is supplemented with more extended contexts that incorporate domain knowledge. Using such long contexts often poses severe memory bottlenecks. The context processing delay can be alleviated by using the KV cache, but fetching the KV cache, which contains large tensors and often exceeds the model's size, can cause high latency and network delays and completely exhaust GPU RAM.
               </p>
               <p>
-                <b>Hashing: </b>The appearance of each object is determined by a pseudo random generator seed using bitwise operation. The random number determines properties such as type of object and scale. However, its important to note that the number of each type of object is not uniformally distributed despite the random number generator. We found that favoring bookshelves over objects such as lamps helps with the appearance of a library.
+                CAKE (Context-Aware KV Enhancement) is a Reinforcement Learning (RL) based framework to optimize KV Caching policies. The CAKE agent selects from various actions at certain steps in generation - including quantizing a cache layer to lower precision, or one of several eviction actions. We train and evaluate our model using Llama-3.2-3B-Instruct using conversational generation with realistic prompts, and the agent learns policy to minimize memory while maintaining generation quality.
               </p>
-              <p>
-                <b>God Rays: </b>Using a combination of render targets and shaders, crepuscular rays were produced in post-processing. The scene with objects and the scene with light logic were separated. We did not include this in the final result, since we felt the results didn't blend with the rest of the scene well.
-              </p>
-              <p>
-                <b>Bloom: </b>Adding lights is computationally expensive. Using the bloom effect, another post-processing procedure, we were able to create halo light effect around the lamps that were generated in the scene.
-              </p>
-              <p>Enjoy this short walkthrough of a small part of the infinite library</p>
-              <img src="assets/img/librarywalkthrough.gif" class="portfolio-image"></img>
             </div>
             
           </div>
@@ -112,10 +104,10 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Technologies</strong> <span>Javascript, Three.js</span></li>
-                <li><strong>Class</strong> <span>Computer Graphics</span></li>
-                <li><strong>Project date</strong> <span>Fall 2023</span></li>
-                <li><strong>GitHub Repo</strong> <a href=https://github.com/sannivasreddy/cs1230-finalproject>Link</a></li>
+                <li><strong>Technologies</strong> <span>Python, PyTorch, HuggingFace</span></li>
+                <li><strong>Class</strong> <span>Advanced Distributed Systems</span></li>
+                <li><strong>Project date</strong> <span>Spring 2025</span></li>
+                <li><strong>GitHub Repo</strong> <a href=https://github.com/sameersinha3/cake>Link</a></li>
               </ul>
             </div>
           </div>
