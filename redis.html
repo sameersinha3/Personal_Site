@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Project Stoplights</title>
+  <title>Mini-Redis</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -63,7 +63,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Project Stoplights</h2>
+              <h2>Mini-Redis</h2>
               <p>Here are some details of the project and the GitHub repo</p>
             </div>
           </div>
@@ -73,7 +73,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Project Stoplights</li>
+            <li>Mini-Redis</li>
           </ol>
         </div>
       </nav>
@@ -86,29 +86,14 @@
 
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Project Stoplights</h2>
+              <h2>Mini-Redis</h2>
               <p>
-                This project was a partner project that was my final project for CSCI 1470: Deep Learning. The project was open-ended, and my 
-                partner and I decided to use deep learning to detect stops at a crosswalk.
+                This project is a distributed key-value store built in Go, designed to provide a lightweight, fault-tolerant backend for applications requiring fast and consistent access to structured data. The system supports basic CRUD operations over a RESTful API, with built-in data replication across multiple nodes to ensure high availability and resilience to node failures. The initial implementation uses a primary-backup model to coordinate replication and handle failover scenarios. It is optimized for easy deployment on cloud platforms like Google Cloud Platform (GCP) using Free Tier resources, making it an accessible, scalable solution for developers and small teams.
               </p>
               <p>
-                This project was technically intense. For starters, we had not covered object detection very deeply in class. Thus, we
-                had to engage in a good deal of research on how best to detect cars and crosswalks. We trained an RCNN on our own synthetically
-                created images of crosswalks and used a YoloV5 model we trained via a Jupyter notebook on a Roboflow dataset of cars. Once we created these models, we
-                were able to algorithmically combine them to detect stops. In essence, we found the closest crosswalk, and if the distance between the two 
-                stayed relatively stable for a certain amount of time, we marked a stop. By default, cars were marked as running the stop sign unless they 
-                met this criteria.
+                Key features include leader election, write-ahead logging for durability, health-check endpoints, and eventual consistency for read replicas. A simple configuration system allows for easy scaling across regions. Looking ahead, the project could be extended to support Raft-based consensus for stronger consistency guarantees, dynamic cluster membership, sharding for horizontal scalability, and support for transactions. Integrating with observability tools like Prometheus and Grafana could also enhance monitoring and debugging in production deployments.
               </p>
-              <p>
-                While it was difficult to formally test our model since we had a limited amount of data, we were able to quantitatively confirm
-                that our model worked well and detect when cars ran stop signs. This is one of the most satisfying projects I have ever worked
-                on due to the amount of work that was required.
-              </p>
-              <p>
-                  The below screenshot is not technically from our training data, but this was our Yolo object detection model that we used. It shows
-                  how accurate our vehicle detection model was. Oh, and it looks pretty cool :)
-              </p>
-              <img src="assets/img/portfolio/Stoplights.png" class="portfolio-image"></img>
+             
             </div>
           </div>
 
@@ -116,11 +101,9 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Technologies</strong> <span>Python, TensorFlow, PyTorch</span></li>
-                <li><strong>Type</strong> <span>Class Project</span></li>
-                <li><strong>Project date</strong> <span>Fall 2022</span></li>
-                <li><strong>Hackathon Submission with Details and Results</strong> <a href="https://devpost.com/software/project-stop-lights">https://devpost.com/software/project-stop-lights</a></li>
-                <li><strong>GitHub Repo</strong> <a href="https://github.com/funnybear681/ProjectStopLights">https://github.com/funnybear681/<br/>ProjectStopLights</a></li>
+                <li><strong>Technologies</strong> <span>GoLang</span></li>
+                <li><strong>Type</strong> <span>Personal Project</span></li>
+                <li><strong>GitHub Repo</strong> <a href="https://github.com/sameersinha3/mini-redis">Link</li>
               </ul>
             </div>
           </div>
