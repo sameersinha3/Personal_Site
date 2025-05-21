@@ -91,7 +91,7 @@
                 This project is a distributed key-value store built in Go, designed to provide a lightweight, fault-tolerant backend for applications requiring fast and consistent access to structured data. The system supports basic CRUD operations over a RESTful API, with built-in data replication across multiple nodes to ensure high availability and resilience to node failures. The initial implementation uses a primary-backup model to coordinate replication and handle failover scenarios. It is optimized for easy deployment on cloud platforms like Google Cloud Platform (GCP) using Free Tier resources, making it an accessible, scalable solution for developers and small teams.
               </p>
               <p>
-                Key features include leader election, write-ahead logging for durability, health-check endpoints, and eventual consistency for read replicas. A simple configuration system allows for easy scaling across regions. Looking ahead, the project could be extended to support Raft-based consensus for stronger consistency guarantees, dynamic cluster membership, sharding for horizontal scalability, and support for transactions. Integrating with observability tools like Prometheus and Grafana could also enhance monitoring and debugging in production deployments.
+                Key features include leader election, write-ahead logging for durability, health-check endpoints, snapshotting, Raft-based leader election, and eventual consistency for read replicas. A simple configuration system allows for easy scaling across regions.
               </p>
              
             </div>
